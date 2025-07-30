@@ -1,0 +1,7 @@
+*.ipynb
+*.csv
+tests/
+__pycache__/
+jupyter_notebooks/
+dev_data/
+docs/
