@@ -3,9 +3,17 @@ import pandas as pd
 import joblib
 
 # 1) Load your artifacts
-model        = joblib.load("model/xgb_model.pkl")
-scaler       = joblib.load("model/scaler.pkl")
+print("Loading model...")
+model = joblib.load("model/xgb_model.pkl")
+print("✅ Model loaded")
+
+print("Loading scaler...")
+scaler = joblib.load("model/scaler.pkl")
+print("✅ Scaler loaded")
+
+print("Loading features...")
 feature_cols = joblib.load("model/feature_cols.pkl")
+print("✅ Features loaded")
 num_cols     = ['Age', 'CabinNum', 'TotalSpend', 'GroupSize']
 
 app = Flask(__name__)
