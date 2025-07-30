@@ -4,7 +4,9 @@ numpy
 scikit-learn
 matplotlib
 seaborn
-jupyter
 xgboost
 Joblib
 gunicorn
+
+
+# jupyter # commented out as it is not needed in production

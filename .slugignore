@@ -1,7 +1,17 @@
+# Ignore notebooks
 *.ipynb
-*.csv
-tests/
-__pycache__/
-jupyter_notebooks/
-dev_data/
-docs/
+notebooks/
+notebooks/.ipynb_checkpoints/
+
+# Ignore raw and processed datasets
+data/
+output/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore plots and notebook outputs
+*.png
+
+# Ignore pickled models — deploy with lighter/smaller format or load externally if possible
+model/
