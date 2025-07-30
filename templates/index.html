@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Spaceship Titanic Predictor</title>
+</head>
+<body>
+  <h1>Passenger Transport Prediction</h1>
+
+  {% if result is not none %}
+    <p><strong>Result:</strong> {{ result }}</p>
+  {% endif %}
+
+  <form action="/submit" method="post">
+    Age:        <input name="Age"        type="number" step="any" required><br/>
+    CabinNum:   <input name="CabinNum"   type="number" step="any" required><br/>
+    TotalSpend: <input name="TotalSpend" type="number" step="any" required><br/>
+    GroupSize:  <input name="GroupSize"  type="number" step="any" required><br/>
+    <button type="submit">Predict</button>
+  </form>
+</body>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1a2233;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 1px;
+  }
+  form {
+    background: #232e47;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  label, input {
+    font-size: 1rem;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border: 1px solid #3a4660;
+    border-radius: 6px;
+    background: #1a2233;
+    color: #f4f4f4;
+    box-sizing: border-box;
+    transition: border 0.2s;
+  }
+  input[type="number"]:focus {
+    border-color: #5bc0be;
+    outline: none;
+  }
+  button {
+    background: #5bc0be;
+    color: #232e47;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+  }
+  button:hover {
+    background: #3aafa9;
+  }
+  p strong {
+    color: #5bc0be;
+  }
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 24px;
+  }
+  form > div {
+    display: flex;
+    flex-direction: column;
+  }
+  form input {
+    margin-bottom: 0;
+  }
+</style>
+</html>
