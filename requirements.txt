@@ -2,11 +2,11 @@ Flask
 pandas
 numpy
 scikit-learn
-matplotlib
-seaborn
 xgboost
-Joblib
+joblib
 gunicorn
 
-
-# jupyter # commented out as it is not needed in production
+# commented out as it is not needed in production
+# matplotlib
+# seaborn 
+# jupyter 

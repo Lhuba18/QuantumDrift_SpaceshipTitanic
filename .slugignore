@@ -1,17 +1,21 @@
-# Ignore notebooks
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Jupyter notebooks and their checkpoints
 *.ipynb
 notebooks/
 notebooks/.ipynb_checkpoints/
+
+# Ignore all PNGs (plots/visualizations)
+*.png
 
 # Ignore raw and processed datasets
 data/
 output/
 
-# Ignore macOS system files
-.DS_Store
-
-# Ignore plots and notebook outputs
-*.png
-
-# Ignore pickled models — deploy with lighter/smaller format or load externally if possible
+# Ignore pickled model and scaler artifacts
 model/
+
+# Ignore other dev or documentation files if any
+*.log
+*.md
