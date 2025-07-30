@@ -16,3 +16,4 @@ EXPOSE 8080
 
 # Run the Flask app with Gunicorn
 CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8080"]
+
